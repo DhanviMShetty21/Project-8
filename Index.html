@@ -1,0 +1,135 @@
+
+<html>
+<head>
+
+    <title>About Me - Dhanvi</title>
+   
+</head>
+
+<style>
+    /* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+    background: linear-gradient(135deg, #ff7eb3, #8a9aff);
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite;
+}
+
+/* Gradient background animation */
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    animation: slideDown 1s ease-out;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+/* Main content */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Photo section */
+.photo-container {
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: popIn 1.5s ease;
+}
+
+.profile-pic {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+</style>
+<body>
+    <header>
+        <h1>Hello, I'm Dhanvi!</h1>
+        <p>Welcome to my personal webpage!</p>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>About Me</h2>
+            <p>
+                Hi, my name is Dhanvi. I love coding, playing piano, and exploring new hobbies. 
+                This website is a small project to showcase my interests and learn more about web development.
+            </p>
+        </section>
+        <section class="photo-section">
+            <h2>My Picture</h2>
+            <div class="photo-container">
+                <img src="mypic.png" alt="Dhanvi's picture" class="profile-pic">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> 2024 Dhanvi</p>
+    </footer>
+</body>
+</html>
